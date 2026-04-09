@@ -74,7 +74,7 @@ for n_mc = 1:N_mc
     r_rx_sc_wn = H * s_tx_sc ;
     r_rx_oddm_wn = H * s_tx_oddm ;
     n_norm = sqrt(1/2) * (randn(M_rx,1)...
-        + 1j*randn(size(M_rx,1)));
+        + 1j*randn(M_rx,1));
     for b = 1:length(sigma2_cand)
         sigma2 = sigma2_cand(b) ;
         % sigma2 = 0 ;
